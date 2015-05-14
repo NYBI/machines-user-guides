@@ -34,7 +34,10 @@ Outils et matériaux::
     Raisons
 2. étape
   quoi::
-    Importer le fichier dans {lcut}.
+    Importer le fichier dans {lcut}. +
+     +
+     +
+    .
   comment::
     * Exporter depuis votre logiciel préféré votre découpe au format DXF R14 avec des unités en mm.
     * Importer dans {lcut} par le menu +File/Import+.
@@ -43,7 +46,7 @@ Outils et matériaux::
     * [quantity-check]#Les versions ultérieures sont mal reconnues par {lcut}.#
     * [easier]#Préciser les unités lors de l'export évite d'avoir à remettre à l'échelle ensuite.#
     * Le menu File/Open ne permet d'ouvrir que le format propriétaire de {lcut}.
-    * La machine peut passer plusieurs fois au même endroit, donc cela augmente le temps d'utilisation de la machine, en plus des risques de mauvaises découpes.
+    * Cela augmente le temps d'utilisation de la machine, en plus des risques de mauvaises découpes.
 3. étape
   quoi::
     Définir le trajet de coupe.
