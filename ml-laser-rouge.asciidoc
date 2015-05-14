@@ -1,0 +1,89 @@
+Guide d'utilisation de la découpeuse laser MLLaser(TM) Bleu
+===========================================================
+Loïc Fejoz <loic@fejoz.net>
+v0.0, Mai 2015
+:author: Nybi.cc
+:email: pilotage@listes.nybi.cc
+:data-uri:
+:icons:
+:iconsdir: /usr/share/asciidoc/icons/
+:lang: fr
+:encoding: utf-8
+:lcut: LaserCut(TM)
+
+Opération::
+  Faire une découpe au laser à partir d'un fichier vectoriel
+Composants::
+  * fichier vectoriel (par ex. DXF ou SVG)
+  * matériau compatible
+Outils et matériaux::
+  * Découpeuse Laser MLLaser(TM) bleu
+  * Logiciel LaserCut
+Équipements de sécurité requis::
+  * N/A
+
+== Pas à pas
+
+[role='steps withheaders']
+1. titre
+  quoi::
+    Étapes importantes
+  comment::
+    Points importants
+  pourquoi::
+    Raisons
+2. étape
+  quoi::
+    Importer le fichier dans {lcut}.
+  comment::
+    * Exporter depuis votre logiciel préféré votre découpe au format DXF R14 avec des unités en mm.
+    * Importer dans {lcut} par le menu +File/Import+.
+    * Vérifier qu'il n'y ait pas de superposition de traits.
+  pourquoi::
+    * [quantity-check]#Les versions ultérieures sont mal reconnues par {lcut}.#
+    * [easier]#Préciser les unités lors de l'export évite d'avoir à remettre à l'échelle ensuite.#
+    * Le menu File/Open ne permet d'ouvrir que le format propriétaire de {lcut}.
+    * La machine peut passer plusieurs fois au même endroit, donc cela augmente le temps d'utilisation de la machine, en plus des risques de mauvaises découpes.
+3. étape
+  quoi::
+    Définir le trajet de coupe.
+  comment::
+    * Assigner une couleur à chaque type de coupe ou gravure, ainsi qu'à chaque groupe de découpe.
+    * Ordonner les couleurs
+  pourquoi::
+    La machine considère chacun des groupes _séquentiellement_ avec des caractéristiques de _coupes différentes_.
+4. étape
+  quoi::
+    Définir les vitesses et puissances de coupe.
+  comment::
+    * Double-cliquer sur chacune des couleurs dans le panneau en haut à droite.
+    * Reportez-vous au tableau annexe ou faites des essais pour connaitre les valeurs à utiliser.
+    * Vérifier que le matériau que vous allez utilisé est bien autorisé.
+  pourquoi::
+    La couleur, la densité, le type de matériau, l'encrassement de la lentille, etc font qu'il faut adapter systématiquement la vitesse et la puissance de coupe.
+5. étape
+  quoi::
+    Préparer la machine.
+  comment::
+    * Allumer la machine
+    * Faire le ``zéro''
+      ** placer la plaque métallique sur la grille dessous la lentille.
+      ** sélectionner sur la machine le bouton TODO.
+  pourquoi::
+    * [quantity-check]#Pour avoir une coupe efficace, il est nécessaire que le laser soit focalisé au bon endroit.#
+6. étape
+  quoi::
+    Effectuer la coupe.
+  comment::
+    * Transférer le fichier de l'ordinateur à la machine.
+    * Allumer la ventilation.
+    * Appuyer sur le bouton démarrer.
+    * Surveiller en permanence la découpe en cours.
+  pourquoi::
+    * La ventilation évite les gaz toxiques dans le local, mais évite aussi les traces de fumée.
+    * [critical-check]#De nombreux matériaux peuvent prendre feu.#
+
+[quote, anonyme]
+___________________________________________________________________
+On vient pour les imprimantes 3D, on reste pour les découpes laser.
+___________________________________________________________________
