@@ -70,10 +70,11 @@ Outils et matériaux::
   comment::
     * Allumer la machine
     * Faire le ``zéro''
-      ** placer la plaque métallique sur la grille dessous la lentille.
-      ** sélectionner sur la machine le bouton TODO.
+      ** Placer la plaque métallique sur le matériau à découper, le plus en arrière possible par rapport à la tête de découpe pour que le point lumineux matérialisant le faisceau laser soit au borde de cette plaque.
+      ** Sélectionner sur la machine le bouton [Z] situé au centre des flèces de direction puis appuyer sur le bouton [Origine]. La ``mise au point'' se fait automatiquement.
   pourquoi::
     * [quantity-check]#Pour avoir une coupe efficace, il est nécessaire que le laser soit focalisé au bon endroit.#
+    * [critical-check]#La capteur à effet hall de la prise d'origine est situé à l'arrière du laser.# S'il est mal placé, le plateau peut heurter le laser.
 6. étape
   quoi::
     Effectuer la coupe.
